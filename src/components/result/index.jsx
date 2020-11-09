@@ -1,25 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './outcome.css';
+import './result.css';
 
-const Outcome = props => {
+const Result = props => {
     const { label, result } = props;
     return (
-        <div className="outcome">
+        <div className="result">
             <span>{label}</span>
             <span>{result}</span>
         </div>
     )
 };
 
-Outcome.propTypes = {
+Result.propTypes = {
     label: PropTypes.string.isRequired,
-    result: PropTypes.number
+    result: PropTypes.string
 }
 
-Outcome.defaultProps = {
-    result: 0
+Result.defaultProps = {
+    result: ''
 }
 
-export default Outcome;
+export default Result;
