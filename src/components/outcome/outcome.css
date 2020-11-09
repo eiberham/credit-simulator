@@ -1,0 +1,10 @@
+.outcome {
+    background: #02355D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem; 
+}

@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  text-align: center;
+  background: #095085;
+  min-height: 100vh;
+  padding: 6rem 6rem 0 6rem;
+}

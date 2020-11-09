@@ -1,0 +1,15 @@
+.credit {
+    background: #033B67;
+    min-height: 90vh;
+    padding: 4rem;
+}
+
+.credit__result {
+    margin: 1rem 0 0 0;
+}
+
+.credit__actions {
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    grid-gap: 10px;
+}

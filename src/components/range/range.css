@@ -1,0 +1,22 @@
+.range {
+    margin: 2rem 0;
+}
+
+.range .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.range .row .label {
+    color: white;
+    text-transform: uppercase;
+}
+
+.range .row input {
+    background-color: #033B67;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+}
