@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.1dfb6c79.chunk.css",
-    "main.js": "/static/js/main.c6fb0543.chunk.js",
-    "main.js.map": "/static/js/main.c6fb0543.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fd6bdc6a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fd6bdc6a.js.map",
-    "static/css/2.04161cee.chunk.css": "/static/css/2.04161cee.chunk.css",
-    "static/js/2.e80a032f.chunk.js": "/static/js/2.e80a032f.chunk.js",
-    "static/js/2.e80a032f.chunk.js.map": "/static/js/2.e80a032f.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.04161cee.chunk.css.map": "/static/css/2.04161cee.chunk.css.map",
-    "static/css/main.1dfb6c79.chunk.css.map": "/static/css/main.1dfb6c79.chunk.css.map",
-    "static/js/2.e80a032f.chunk.js.LICENSE.txt": "/static/js/2.e80a032f.chunk.js.LICENSE.txt"
+    "main.css": "/credit-simulator/static/css/main.e44101d3.chunk.css",
+    "main.js": "/credit-simulator/static/js/main.7de73122.chunk.js",
+    "main.js.map": "/credit-simulator/static/js/main.7de73122.chunk.js.map",
+    "runtime-main.js": "/credit-simulator/static/js/runtime-main.90fb083d.js",
+    "runtime-main.js.map": "/credit-simulator/static/js/runtime-main.90fb083d.js.map",
+    "static/css/2.04161cee.chunk.css": "/credit-simulator/static/css/2.04161cee.chunk.css",
+    "static/js/2.0a685a95.chunk.js": "/credit-simulator/static/js/2.0a685a95.chunk.js",
+    "static/js/2.0a685a95.chunk.js.map": "/credit-simulator/static/js/2.0a685a95.chunk.js.map",
+    "index.html": "/credit-simulator/index.html",
+    "static/css/2.04161cee.chunk.css.map": "/credit-simulator/static/css/2.04161cee.chunk.css.map",
+    "static/css/main.e44101d3.chunk.css.map": "/credit-simulator/static/css/main.e44101d3.chunk.css.map",
+    "static/js/2.0a685a95.chunk.js.LICENSE.txt": "/credit-simulator/static/js/2.0a685a95.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd6bdc6a.js",
+    "static/js/runtime-main.90fb083d.js",
     "static/css/2.04161cee.chunk.css",
-    "static/js/2.e80a032f.chunk.js",
-    "static/css/main.1dfb6c79.chunk.css",
-    "static/js/main.c6fb0543.chunk.js"
+    "static/js/2.0a685a95.chunk.js",
+    "static/css/main.e44101d3.chunk.css",
+    "static/js/main.7de73122.chunk.js"
   ]
 }
