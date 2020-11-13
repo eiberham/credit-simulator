@@ -17,3 +17,9 @@
 .btn--success {
     background-color: #19AA8C;
 }
+
+@media (max-width: 700px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+}

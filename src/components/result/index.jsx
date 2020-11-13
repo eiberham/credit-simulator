@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import './result.css';
 
-const Result = props => {
-    const { label, result } = props;
+const Result = ({label, result}) => {
     return (
         <div className="result">
             <span>{label}</span>

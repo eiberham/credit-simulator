@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
@@ -7,50 +7,36 @@ import './range.css';
 
 import { formatter } from '../../utils';
 
-const Range = props => {
-    const { label, currency, minRange, maxRange, invokeFunction } = props;
+const style = {
+    fontSize: '14px',
+    color: 'white',
+};
+
+const Range = ({label, currency, minRange, maxRange, invokeFunction}) => {
     const [max, setMax] = useState('');
-    const ref = React.createRef();
-    const timeout = useRef();
+
     const marks = {
         [minRange]: {
-            style: {
-                fontSize: '14px',
-                color: 'white',
-            },
+            style,
             label: <strong>{`${currency ? '$' : ''}${minRange}`}</strong>,
           },
         
         [maxRange]: {
-            style: {
-                fontSize: '14px',
-                color: 'white',
-            },
+            style,
             label: <strong>{`${currency ? '$' : ''}${maxRange}`}</strong>,
           },
     };
 
-    const debounce = (fn, delay) => {
-        clearTimeout(timeout.current);
-        timeout.current = setTimeout(fn, delay);
-    }
-
     const onSliderChange = value => {
-        debounce(() => {
-            setMax(value)
-            invokeFunction(value)
-        }, 10);
+        setMax(value)
+        invokeFunction(value)
     }
-
-    useEffect(() => {
-        ref.current.value = `${currency ? formatter.format(max) : max}`;
-    }, [max, currency, ref])
 
     return (
         <div className="range">
             <div className="row">
                 <span className="label">{label}</span>
-                <input type="text" value="" readOnly ref={ref} />
+                <input type="text" value={currency ? formatter.format(max) : max} readOnly />
             </div>
             
             <Slider 
@@ -58,6 +44,7 @@ const Range = props => {
                 max={maxRange} 
                 onChange={onSliderChange} 
                 marks={marks}
+                step={currency ? 1000 : 1}
             /> 
         </div>
     )

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './credit.css';
 
 import Title from '../title';
@@ -17,11 +17,6 @@ const calculateFixedFee = amount => period => {
 const Credit = () => {
     const [period, setPeriod] = useState(null);
     const [amount, setAmount] = useState(null);
-    const [result, setResult] = useState(null);
-
-    useEffect(() => {
-        setResult(calculateFixedFee(amount)(period));
-    }, [period, amount]);
 
     const onAmountChange = amount => setAmount(amount)
 
@@ -30,17 +25,15 @@ const Credit = () => {
     return (
         <div className="credit">
             <Title text="Simulá tu crédito" />
-            <Range 
-                key="total"
-                label={`Monto Total`} 
+            <Range
+                label="Monto Total"
                 minRange={5000} 
                 maxRange={50000} 
                 currency
                 invokeFunction={onAmountChange}
             />
-            <Range 
-                key="plazo"
-                label={`Plazo`} 
+            <Range
+                label="Plazo"
                 minRange={3}
                 maxRange={24}
                 invokeFunction={onPeriodChange}
@@ -48,18 +41,16 @@ const Credit = () => {
             <div className="credit__result">
                 <Result 
                     label="Cuota fija por mes" 
-                    result={result}
+                    result={calculateFixedFee(amount)(period)}
                 />
             </div>
             <div className="credit__actions">
-                <Button 
-                    key="credito"
+                <Button
                     type="success" 
                     name="credito"
                     text="Obtené Crédito"
                 />
-                <Button 
-                    key="cuotas"
+                <Button
                     type="info" 
                     name="cuotas"
                     text="Ver detalle de cuotas"

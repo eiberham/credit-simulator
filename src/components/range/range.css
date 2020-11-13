@@ -29,3 +29,15 @@
     margin: 0 2rem;
     width: auto;
 }
+
+@media (max-width: 700px) {
+    .range .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .range .row .label {
+        margin: 6px 0;
+        justify-content: center;
+    }
+}

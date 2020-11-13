@@ -1,6 +1,7 @@
 .credit {
     background: #033B67;
     min-height: 90vh;
+    min-width: 370px;
     padding: 4rem;
 }
 
@@ -10,6 +11,6 @@
 
 .credit__actions {
     display: grid;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
 }
